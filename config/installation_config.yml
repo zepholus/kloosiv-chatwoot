@@ -42,11 +42,11 @@
   display_title: 'Brand Name'
   description: 'The name that would be used in emails and the widget'
 - name: TERMS_URL
-  value: 'https://kloosiv.coop/terms'
+  value: 'https://www.iubenda.com/condiciones-de-uso/18464004'
   display_title: 'Terms URL'
   description: 'The terms of service URL displayed in Signup Page'
 - name: PRIVACY_URL
-  value: 'https://kloosiv.coop/terms'
+  value: 'https://www.iubenda.com/privacy-policy/18464004'
   display_title: 'Privacy URL'
   description: 'The privacy policy URL displayed in the app'
 - name: DISPLAY_MANIFEST
