@@ -1,6 +1,7 @@
 # Variables
 APP_NAME := chatwoot
 RAILS_ENV ?= development
+DOCKER_REPO := zepholus/kloosiv-platform:chatwoot
 
 # Targets
 setup:
@@ -49,7 +50,10 @@ debug:
 debug_worker:
 	overmind connect worker
 
-docker: 
-	docker build -t $(APP_NAME) -f ./docker/Dockerfile .
+docker-build:
+  docker build -t $(DOCKER_REPO) -f ./docker/Dockerfile .
+
+docker-push:
+  docker push $(DOCKER_REPO)
 
 .PHONY: setup db_create db_migrate db_seed db_reset db console server burn docker run force_run debug debug_worker
